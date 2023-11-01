@@ -1,0 +1,41 @@
+@media only screen and (max-width: 625px) {
+    h1 {
+        font-size: 2rem;
+        margin-top: 4rem;
+    }
+
+    button {
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        width: 100%;
+        max-width: 22.5rem;
+        margin-left: 5px;
+    }
+
+    input {
+        max-width: 14.5rem;
+    }
+
+    input::placeholder {
+        text-align: left;
+
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .subtext {
+        margin-top: 3rem;
+    }
+
+    #error-text {
+        position: unset;
+
+    }
+}

@@ -1,0 +1,152 @@
+:root {
+
+    --Blue: hsl(223, 87%, 63%);
+    --Pale-Blue: hsl(223, 100%, 88%);
+    --Light-Red: hsl(354, 100%, 66%);
+    --Gray: hsl(0, 0%, 59%);
+    --Very-Dark-Blue: hsl(209, 33%, 12%);
+    --Font-family: 'Libre Franklin', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    justify-content: center;
+    /* max-width: 50rem; */
+    /* width: 100%; */
+    font-family: var(--Font-family);
+    transition: opacity 1s ease;
+}
+
+h1 {
+    color: var(--Gray);
+    font-size: 3rem;
+    font-family: var(--Font-family);
+    font-weight: 400;
+}
+
+.text {
+    line-height: 15px;
+    margin-bottom: 3rem;
+}
+
+.soon {
+    font-weight: bold;
+    color: var(--Very-Dark-Blue);
+}
+
+.subtext {
+    color: var(--Gray);
+    font-weight: 400;
+    font-size: 20px;
+}
+
+input {
+    width: 100%;
+    max-width: 21rem;
+    padding: 1rem 4rem;
+    border-radius: 50px;
+    border: solid var(--Pale-Blue);
+}
+
+::placeholder {
+    color: var(--Pale-Blue);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+button {
+    background-color: var(--Blue);
+    padding: 1rem 3rem;
+    color: white;
+    border-radius: 50px;
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+    box-shadow: 2px 6px 16px rgba(173, 216, 230, 0.5);
+}
+
+button:hover {
+    background-color: rgb(127, 150, 225);
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+}
+
+.dashboard {
+    width: 100%;
+    max-width: 38rem;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+}
+
+.facebook-icon {
+    background-color: #fbfbfb;
+    color: #0004ff;
+    padding: 8px;
+    border-radius: 50%;
+    border: solid rgb(248, 240, 240);
+    text-decoration: none;
+}
+
+#error-text {
+    display: none;
+    color: var(--Light-Red);
+    font-style: italic;
+    font-size: 13px;
+    position: relative;
+    left: 1rem;
+
+}
+
+.facebook-icon:hover {
+    background-color: var(--Blue);
+    color: white;
+    transition: 1s;
+}
+
+.twitter-icon {
+    background-color: #fbfbfb;
+    color: #0004ff;
+    padding: 8px;
+    border-radius: 50%;
+    border: solid rgb(248, 240, 240);
+    text-decoration: none;
+}
+
+.twitter-icon:hover {
+    background-color: var(--Blue);
+    color: white;
+    transition: 1s;
+}
+
+.instagram-icon {
+    background-color: #fbfbfb;
+    color: #0004ff;
+    padding: 8px;
+    border-radius: 50%;
+    border: solid rgb(248, 240, 240);
+    text-decoration: none;
+}
+
+.instagram-icon:hover {
+    background-color: var(--Blue);
+    color: white;
+    transition: 1s;
+}
+
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: none;
+}
